@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Age Guesser</title>
+    <title>The Ultimate Birth Guesser</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main_container">
-        <p>The <strong>ULTIMATE</strong> age guesser</p>
-        <label for="name"></label>
-        <input type="text" id="nameInput" class="name" placeholder="Enter your name" required>
-        <button id="guessButton" class="guess_button">Guess My Age</button>
-        <div id="result" class="result">
-            <label for="msg_result">Es esta tu edad?</label>
-            <p id="msg_result" class="msg_result">.</p>
+    <div class="main_container" id="main_container">
+        <p>The <strong>ULTIMATE</strong> birth date guesser</p>
+        <form id="guessForm" class="guessForm">
+            <label for="name"></label>
+            <input type="text" id="nameInput" class="name" placeholder="Enter your name" required>
+            <button id="guessButton" class="guess_button" type="submit">Guess My Day Of Birth</button>
+        </form>
+        <div id="resultDiv" class="resultDiv">
+            <label for="msg_result" id="msg_result_label"></label>
+            <p id="msg_result" class="msg_result"></p>
         </div>
     </div>
     <script src="script.js"></script>
