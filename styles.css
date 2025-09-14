@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #d5d5d5;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #1B4332;
 }
 
 .main_container {
@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ede8d0;
+    background-color: #E0E1DD;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -31,7 +31,7 @@ body {
 }
 
 .guess_button {
-    background-color: #ff3333;
+    background-color: #52B788;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -46,12 +46,12 @@ body {
 }
 
 .guess_button:hover {
-    background-color: #E74C3C;
+    background-color: #47a177;
     transform: scale(1.05);
 }
 
 .guess_button:active {
-    background-color: #C0392B;
+    background-color: #3f8f6a;
     transform: scale(0.95);
 }
 
@@ -61,3 +61,20 @@ body {
     color: #333;
     display: none;
 }
+
+.rainbowText {
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 166, 0), rgb(255, 255, 0), rgb(0, 134, 0), rgb(0, 0, 255), rgb(72, 0, 124), rgb(238, 130, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: rainbowText 3s linear infinite alternate;
+    }
+
+    @keyframes rainbowText {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
